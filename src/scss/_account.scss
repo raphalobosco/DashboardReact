@@ -1,0 +1,23 @@
+.account-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-block: 1rem;
+
+    input {
+        height: 50px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #242141;
+        font-size: 1rem;
+        color: #242141;
+    }
+
+    .full {
+        width: 100%;
+    }
+
+    .half {
+        flex: 0.5;
+    }
+}

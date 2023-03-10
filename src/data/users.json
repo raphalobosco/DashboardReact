@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "photo": "https://randomuser.me/api/portraits/men/43.jpg",
+      "phone": "0899823526",
+      "credits": "35",
+      "address": {
+        "street": "11 Street High",
+        "city": "Dublin",
+        "zipcode": "D15"
+      },
+      "bookings_past": [
+        {
+          "name": "Gallagher's Boxty House",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "07/03/2023"
+        },
+        {
+          "name": "The Quays Irish Restaurant",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "01/03/2023"
+        },
+        {
+          "name": "The Brazen Head",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "22/02/2023"
+        }
+      ],
+      "bookings_up": [
+        {
+          "name": "The Old Spot",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "14/03/2023"
+        }
+      ],
+      "email": "johndoe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "photo": "https://randomuser.me/api/portraits/women/28.jpg",
+      "phone": "0871234567",
+      "credits": "42",
+      "address": {
+        "street": "22 Main Street",
+        "city": "Galway",
+        "zipcode": "G13"
+      },
+      "bookings_past": [
+        {
+          "name": "Kai Restaurant",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "02/03/2023"
+        },
+        {
+          "name": "Loam Restaurant",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "26/02/2023"
+        },
+        {
+          "name": "The Dough Bros Wood Fired Pizza",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "15/02/2023"
+        },
+        {
+          "name": "Aniar Restaurant",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "09/02/2023"
+        },
+        {
+          "name": "Tartare Café + Wine Bar",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "02/02/2023"
+        }
+      ],
+      "bookings_up": [
+        {
+          "name": "Cava Bodega",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "16/03/2023"
+        },
+        {
+          "name": "The Black Cat",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "23/03/2023"
+        }
+      ],
+      "email": "janesmith@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "photo": "https://randomuser.me/api/portraits/men/53.jpg",
+      "phone": "0869876543",
+      "credits": "20",
+      "address": {
+        "street": "33 Lower Road",
+        "city": "Cork",
+        "zipcode": "C21"
+      },
+      "bookings_past": [
+        {
+          "name": "Market Lane",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "01/01/2022"
+        },
+        {
+          "name": "The Spitjack",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "31/12/2021"
+        },
+        {
+          "name": "Paradiso",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "10/10/2021"
+        }
+      ],
+      "bookings_up": [
+        {
+          "name": "The Cornstore",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "01/05/2022"
+        },
+        {
+          "name": "Jacobs on the Mall",
+          "photo": "https://picsum.photos/300?random=1",
+          "date": "07/04/2022"
+        }
+      ],
+      "email": "bobjohnson@example.com"
+    }
+  ]
+}

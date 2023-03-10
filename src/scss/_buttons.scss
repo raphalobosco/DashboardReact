@@ -1,0 +1,19 @@
+.btn {
+    padding: 1rem 2rem;
+    background-color: #7C63E4;
+    text-align: start;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#7C63E4, 5%);
+    }
+}

@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #ececf3;
+    color: #242141;
+    flex: 0 auto;
+    min-width: 25%;
+
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+
+    @include mq-desktop {
+        max-width: 25%;
+    }
+
+    @include mq-laptop {
+        max-width: 30%;
+    }
+
+    @include mq-tablet-portrait {
+        min-width: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-block: 2rem;
+    }
+}
