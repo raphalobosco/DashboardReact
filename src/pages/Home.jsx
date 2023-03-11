@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 import BookingListPast from "../components/BookingListPast"
 import BookingListUp from "../components/BookingListUp"
@@ -9,7 +10,8 @@ function Home(props) {
     const random = props.random
     const restPast = props.restPast
     const restUp = props.restUp
-    console.log(restPast)
+
+
 
     return (
         <div>
@@ -19,21 +21,33 @@ function Home(props) {
                 <CreditsBox amount={{ value: users[random].credits }} />
             </Grid>
 
-            <h3>Past Bookings</h3>
-            {restPast.map((restaurant) => {
-                return (
+            <div className="bookings-list">
+                <div className="header-list">
 
-                    <BookingListPast rest={{ name: restaurant.name, photo: restaurant.photo, date: restaurant.date }} />
-                )
-            })}
+                    <h3 className="title">Recent Bookings </h3>
+                    <NavLink to="/bookingspast" className="link" href="">view all ({restPast.length}) </NavLink>
+                </div>
 
-            <h3>Upcoming Bookings</h3>
-            {restUp.map((restaurant) => {
-                return (
+                {restPast.slice(0, 2).map((restaurant) => {
+                    return (
+                        <BookingListPast rest={{ name: restaurant.name, photo: restaurant.photo, date: restaurant.date }} />
+                    )
+                })}
+            </div>
 
-                    <BookingListUp rest={{ name: restaurant.name, photo: restaurant.photo, date: restaurant.date }} />
-                )
-            })}
+            <div className="bookings-list">
+                <div className="header-list">
+
+                    <h3 className="title">Recent Bookings </h3>
+                    <NavLink to="/bookingsup" className="link" href="">view all ({restUp.length}) </NavLink>
+                </div>
+                {restUp.slice(0, 2).map((restaurant) => {
+                    return (
+
+                        <BookingListUp rest={{ name: restaurant.name, photo: restaurant.photo, date: restaurant.date }} />
+                    )
+                })}
+            </div>
 
         </div>
     )

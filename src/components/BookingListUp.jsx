@@ -3,15 +3,7 @@ import { GrCalendar } from 'react-icons/gr'
 
 
 function BookingListUp({ rest }) {
-
-
-
-
     return (
-
-
-
-
         <div className='rest-list'>
             <div className="info-rest">
                 <img src={rest.photo} alt="" />
@@ -19,13 +11,10 @@ function BookingListUp({ rest }) {
             </div>
             <div className="booking-date"> <GrCalendar /> {rest.date}</div>
             <div className="actions">
-                <a className='link'>Write a review</a>
-                <button className='primary'>Book again</button>
+                <a className='link'>cancel</a>
+                <button className='primary'>Modify booking</button>
             </div>
         </div>
-
-
-
     )
 }
 

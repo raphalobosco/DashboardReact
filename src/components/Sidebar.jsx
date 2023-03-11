@@ -5,11 +5,14 @@ import UserProfile from "./UserProfile"
 import CreditsBox from './CreditsBox'
 import { NavLink } from "react-router-dom"
 import styled from "styled-components"
+import { useEffect } from "react"
 
 function Sidebar(props) {
 
   const users = props.users
   const random = props.random
+
+  console.log(random)
 
 
   return (
@@ -20,15 +23,20 @@ function Sidebar(props) {
       <div className="links">
         <Btn to="/"><Button btn={{ name: <GrHomeRounded />, label: 'Dashboard' }} /></Btn>
         <Btn to="/account"><Button btn={{ name: <GrUser />, label: 'Profile' }} /></Btn>
-        <Button btn={{ name: <GrCalendar />, label: 'Upcoming Bookings' }} />
-        <Button btn={{ name: <GrHistory />, label: 'Past Bookings' }} />
+        <Btn to="/bookingsup"><Button btn={{ name: <GrCalendar />, label: 'Upcoming Bookings' }} /></Btn>
+        <Btn to="/bookingspast"><Button btn={{ name: <GrHistory />, label: 'Past Bookings' }} /></Btn>
       </div>
 
       <CreditsBox amount={{ value: users[random].credits }} />
       <div className="links">
-        <Button btn={{ name: <FiLogOut />, label: 'Logout' }} />
+
+        <div onClick={props.onRandomChange} >
+
+          <Button btn={{ name: <FiLogOut />, label: 'Change User' }} />
+        </div>
+
       </div>
-    </div>
+    </div >
 
   )
 }

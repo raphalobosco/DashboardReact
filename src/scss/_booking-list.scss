@@ -7,7 +7,9 @@
     background-color: #ececf3;
     justify-content: space-between;
     align-items: center;
-    margin-block: .5rem;
+    margin-block: 1rem;
+
+
 }
 
 .info-rest {
@@ -21,6 +23,8 @@
     img {
         border-radius: .5rem;
         height: 100%;
+        width: 56px;
+        background-color: #ddd;
     }
 
     p {
@@ -44,4 +48,18 @@
     display: flex;
     gap: .5rem;
 
+}
+
+.bookings-list {
+    margin-block: 2rem;
+
+    .header-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-size: .875rem;
+        }
+    }
 }
