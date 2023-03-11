@@ -16,7 +16,7 @@ function Home(props) {
     return (
         <div>
             <h2>Hello {users[random].name} 👋</h2>
-            <p>{restPast[random].name}</p>
+
             <Grid>
                 <CreditsBox amount={{ value: users[random].credits }} />
             </Grid>
