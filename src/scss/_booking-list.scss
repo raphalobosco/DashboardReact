@@ -1,0 +1,47 @@
+.rest-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #ececf3;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: .5rem;
+}
+
+.info-rest {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    height: 56px;
+    flex: 30%;
+
+    img {
+        border-radius: .5rem;
+        height: 100%;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.booking-date {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex: 20%;
+
+    svg path {
+        stroke: #7C63E4 !important;
+    }
+}
+
+.actions {
+    display: flex;
+    gap: .5rem;
+
+}

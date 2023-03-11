@@ -8,12 +8,16 @@ function Content(props) {
 
   const users = props.users
   const random = props.random
+  const restPast = props.restPast
+  const restUp = props.restUp
+
+  console.log(restPast)
 
 
   return (
     <Main>
       <Routes>
-        <Route path="/" element={<Home users={users} random={random} />} />
+        <Route path="/" element={<Home users={users} random={random} restPast={restPast} restUp={restUp} />} />
         <Route path="/account" element={<Account users={users} random={random} />} />
       </Routes>
 
