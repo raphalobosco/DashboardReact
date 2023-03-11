@@ -1,9 +1,11 @@
 .sidebar {
     background-color: #ececf3;
+    position: fixed;
+    height: 100vh;
     color: #242141;
     flex: 0 auto;
     min-width: 25%;
-
+    height: inherit;
     padding: 2rem;
     height: 100%;
     overflow-y: auto;

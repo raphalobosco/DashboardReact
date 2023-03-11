@@ -1,0 +1,18 @@
+.main-content {
+    padding: 2rem;
+    flex: 1;
+    max-width: 80%;
+    margin-left: 30%;
+
+    @include mq-desktop {
+        margin-left: 25%;
+    }
+
+    @include mq-laptop {
+        margin-left: 30%;
+    }
+
+    @include mq-tablet-portrait {
+        min-width: 100%;
+    }
+}

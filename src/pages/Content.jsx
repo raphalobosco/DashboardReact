@@ -17,7 +17,7 @@ function Content(props) {
 
 
   return (
-    <Main>
+    <main className="main-content">
       <Routes>
         <Route path="/" element={<Home users={users} random={random} restPast={restPast} restUp={restUp} />} />
         <Route path="/bookingspast" element={<BookingsPast users={users} random={random} restPast={restPast} restUp={restUp} />} />
@@ -25,16 +25,10 @@ function Content(props) {
         <Route path="/account" element={<Account users={users} random={random} />} />
       </Routes>
 
-    </Main>
+    </main>
   )
 }
 
-const Main = styled.main`
- 
-		padding: 2rem;
-		flex: 1;
-		max-width: 80%;
-	
-`
+
 
 export default Content
